@@ -23,6 +23,7 @@
         "drupal/field_group": "^3",
         "drupal/focal_point": "^2.0",
         "municipes/lexicum": "^1",
-        "municipes/fundamentum": "^1"
+        "municipes/fundamentum": "^1",
+        "municipes/investigatio": "^1"
     }
 }

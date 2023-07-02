@@ -12,4 +12,5 @@ dependencies:
   - focal_point:focal_point
   - municipes:lexicum
   - municipes:fundamentum
+  - municipes:investigatio
 

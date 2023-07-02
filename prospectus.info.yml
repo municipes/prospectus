@@ -1,0 +1,15 @@
+name: "Prospectŭs"
+description: "Prospectŭs è un modulo Drupal che gestisce le views."
+package: "Municipes"
+
+type: module
+core_version_requirement: ^10
+dependencies:
+  - drupal:views
+  - drupal:media_library
+  - drupal:path
+  - drupal:text
+  - focal_point:focal_point
+  - municipes:lexicum
+  - municipes:fundamentum
+

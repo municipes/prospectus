@@ -167,7 +167,7 @@ display:
       path: domande-frequenti
       menu:
         type: normal
-        title: 'Leggi le FAQ'
+        title: 'Leggi le domande frequenti'
         description: ''
         weight: -50
         expanded: false

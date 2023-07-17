@@ -126,9 +126,22 @@ display:
         type: none
         options: {  }
       cache:
-        type: none
+        type: search_api_tag
         options: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: '<p class="h2">Nessun risultato disponibile per la tua ricerca.</p>'
+            format: bootstrap_italia_2
+          tokenize: false
       sorts:
         search_api_relevance:
           id: search_api_relevance
@@ -189,13 +202,13 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          parse_mode: terms
+          parse_mode: phrase
           min_length: 3
           fields: {  }
       style:
         type: default
         options:
-          row_class: 'col-12 col-md-6 col-lg-4'
+          row_class: ''
           default_row_class: false
           uses_fields: false
       row:
@@ -203,14 +216,13 @@ display:
         options:
           view_modes:
             'entity:node':
-              dataset: card
-              documento_pubblico: card
-              evento: card
-              luogo: card
-              notizia: card
-              persona: card
-              servizio: card
-              unita_organizzativa: card
+              documento_pubblico: search_result
+              evento: search_result
+              luogo: search_result
+              notizia: search_result
+              persona: search_result
+              servizio: search_result
+              unita_organizzativa: search_result
       query:
         type: search_api_query
         options:
@@ -241,6 +253,10 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      cache:
+        type: none
+      defaults:
+        cache: false
       exposed_block: true
       display_extenders: {  }
       path: ricerca-globale
